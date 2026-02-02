@@ -17,7 +17,7 @@
             background-color: white;
             padding: 20px; 
         }
-
+ 
         .header {
             display: flex;
             align-items: flex-start; 
@@ -100,6 +100,24 @@
             font-size: 14px;
             color: #333;
         }
+
+        .question-list {
+          list-style: disc;
+          padding-left: 1.5em;
+        }
+
+        .question-list li {
+          display: list-item;
+        }
+
+        /* Papers list: no bullets */
+        #research h3 + ul {
+          list-style: none;
+        }
+
+        #research h3 + ul li {
+          display: block;
+        }
     </style>
     <script>
         function toggleSection(id, updateUrl = true) {
@@ -164,9 +182,19 @@
             <a onclick="toggleSection('adventures')">adventures</a>
         </div>
         <div id="research" class="content">
-            <h3>about</h3>
-            <p> I am a first-year PhD student at MIT, in the Operations Research Center, where I am fortunate to be advised by Chara Podimata. I currently work on statistical and causal inference in settings with strategic agents, as well as statistical foundations for the calibration and factuality of large language models. Previously, I was an undergrad and master's student at ETH Zürich, where I was lucky to be part of the Learning and Adaptive Systems group of Andreas Krause. There, I worked on uncertainty quantification for sequentially gathered data. During my studies I was generously supported by the Zeno-Karl Schindler Foundation and the Swiss Study Foundation, facilitating visits at the University of Copenhagen and MIT.</p>
-            <h3>papers</h3>
+            <h3>About</h3>
+            <p> I am a second-year PhD student at MIT in the Operations Research Center, where I am fortunate to be advised by Chara Podimata. My goal is to develop principled tools that make increasingly capable AI systems more reliable, transparent, and accountable. My research is motivated by two questions: </p>
+             <ul>
+                <li><p><strong>How can AI models understand their own capabilities?</strong></p></li>
+                <li><p><strong>How can humans understand the capabilities of AI systems?</strong></p></li>
+            </ul>
+            <p>
+            I approach the former through calibration and uncertainty quantification methods that meet the needs of modern AI systems. To address the latter, I develop statistical tools that help us evaluate, monitor, and perform audits of black-box models. </p>
+
+            
+            <p>
+            Previously, I was an undergrad and master's student at ETH Zürich, where I was lucky to be part of the Learning and Adaptive Systems group of Andreas Krause. I worked on online learning, continual learning and meta-learning, as well as optimization algorithms for reinforcement learning. During my studies I was generously supported by the Zeno-Karl Schindler Foundation and the Swiss Study Foundation, facilitating visits at the University of Copenhagen and MIT.</p>
+            <h3>Papers</h3>
             <ul>
                 <li>
                     <p><strong>Nicolas Emmenegger*</strong>; Mojmír Mutný*; Andreas Krause <a href="https://papers.nips.cc/paper_files/paper/2023/file/5491280797f3192b895bce84eb83df8d-Supplemental-Conference.pdf" target="_blank" rel="noopener">Likelihood Ratio Confidence Sets for Sequential Decision Making</a>. In <em>Conference on Neural Information Processing Systems</em> (NeurIPS 2023).</p>
@@ -210,12 +238,7 @@
                     <img src="moregr10.png" alt="Image 7">
                     <div class="caption">More GR10</div>
                 </div>
-                <div class="image-item">
-                    <img src="boston_marathon.png" alt="Image 7">
-                    <div class="caption">First Boston Marathon</div>
-                </div>
             </div>
-            <p> 
             <p> A list of places to <a href="https://www.quaeldich.de/paesse/karte/">be</a></p>
         </div>
     </div>
